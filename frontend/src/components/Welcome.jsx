@@ -5,6 +5,20 @@ import { BsInfoCircle } from "react-icons/bs";
 const Welcome = () => {
 	const commonStyles =
 		"min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-white";
+
+    // const inputStyles = "my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism";
+
+    const Input = ({ placeholder, name, type, value, handleChange }) => (
+        <input
+            placeholder={placeholder}
+            type={type}
+            step="0.0001"
+            value={value}
+            onChange={(e) => handleChange(e, name)}
+            className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+        />
+    );
+    
 	return (
 		<div className="flex w-full justify-center items-center">
 			<div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
@@ -49,6 +63,11 @@ const Welcome = () => {
 							</div>
 						</div>
 					</div>
+          
+          <div>
+
+          </div>
+
 				</div>
 			</div>
 		</div>
