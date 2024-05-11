@@ -1,6 +1,6 @@
 import {
 	Navbar,
-	// Footer,
+	Footer,
 	Welcome,
 	Services,
 	Transactions,
@@ -12,6 +12,7 @@ export default function Page() {
 		<div className="min-h-screen">
 			<div className="gradient-bg-welcome">
 				<Navbar />
+				<Welcome/>
 			</div>
 		</div>
 	);
