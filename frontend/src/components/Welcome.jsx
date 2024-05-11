@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
@@ -17,7 +18,7 @@ const commonStyles =
           className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
       />
   );
-  
+
 const Welcome = () => {
 
 	return (
@@ -78,7 +79,7 @@ const Welcome = () => {
             ) : (
               <button
                 type="button"
-                onClick={handleSubmit}
+                // onClick={handleSubmit}
                 className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
               >
                 Send now
